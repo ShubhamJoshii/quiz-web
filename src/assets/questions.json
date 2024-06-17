@@ -1,0 +1,357 @@
+[
+  {
+    "id": 1,
+    "topic": "JavaScript",
+    "question": "Which of the following is a correct way to declare a JavaScript variable?",
+    "options": ["var myVar;", "variable myVar;", "v myVar;", "myVar = var;"],
+    "answer": "var myVar;",
+    "explanation": "In JavaScript, variables can be declared using the 'var', 'let', or 'const' keywords. 'var myVar;' is the correct way to declare a variable using the 'var' keyword."
+  },
+  {
+    "id": 2,
+    "topic": "JavaScript",
+    "question": "Which built-in method returns the length of a string?",
+    "options": [".size()", ".length()", ".index()", ".length"],
+    "answer": ".length",
+    "explanation": "The '.length' property in JavaScript returns the number of characters in a string. It's a property, not a method, so it's accessed without parentheses."
+  },
+  {
+    "id": 3,
+    "topic": "JavaScript",
+    "question": "How do you write a comment in JavaScript?",
+    "options": [
+      "<!-- This is a comment -->",
+      "// This is a comment",
+      "# This is a comment",
+      "/* This is a comment */"
+    ],
+    "answer": "// This is a comment",
+    "explanation": "Single-line comments in JavaScript start with '//'. Multi-line comments start with '/*' and end with '*/'."
+  },
+  {
+    "id": 4,
+    "topic": "JavaScript",
+    "question": "Which of the following is not a reserved word in JavaScript?",
+    "options": ["interface", "throws", "program", "short"],
+    "answer": "program",
+    "explanation": "'program' is not a reserved keyword in JavaScript, while 'interface', 'throws', and 'short' are reserved."
+  },
+  {
+    "id": 5,
+    "topic": "JavaScript",
+    "question": "How do you create a function in JavaScript?",
+    "options": [
+      "function:myFunction()",
+      "function = myFunction()",
+      "function myFunction()",
+      "func myFunction()"
+    ],
+    "answer": "function myFunction()",
+    "explanation": "In JavaScript, functions are defined using the 'function' keyword followed by the function name and parentheses. The correct syntax is 'function myFunction()'."
+  },
+  {
+    "id": 6,
+    "topic": "JavaScript",
+    "question": "Which method converts JSON data to a JavaScript object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.convert()",
+      "JSON.toObject()"
+    ],
+    "answer": "JSON.parse()",
+    "explanation": "The 'JSON.parse()' method parses a JSON string and returns the corresponding JavaScript object."
+  },
+  {
+    "id": 7,
+    "topic": "JavaScript",
+    "question": "How do you call a function named 'myFunction'?",
+    "options": [
+      "call myFunction()",
+      "call function myFunction()",
+      "myFunction()",
+      "execute myFunction()"
+    ],
+    "answer": "myFunction()",
+    "explanation": "To call a function in JavaScript, you simply use the function name followed by parentheses. 'myFunction()' is the correct way to call a function named 'myFunction'."
+  },
+  {
+    "id": 8,
+    "topic": "JavaScript",
+    "question": "Which of the following is not a JavaScript data type?",
+    "options": ["Undefined", "Number", "Boolean", "Float"],
+    "answer": "Float",
+    "explanation": "JavaScript does not have a separate 'Float' data type. All numbers in JavaScript are of the 'Number' data type, whether they are integers or floating-point numbers."
+  },
+  {
+    "id": 9,
+    "topic": "JavaScript",
+    "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+    "options": [
+      "<script src='script.js'>",
+      "<script name='script.js'>",
+      "<script href='script.js'>",
+      "<script file='script.js'>"
+    ],
+    "answer": "<script src='script.js'>",
+    "explanation": "The correct way to include an external JavaScript file is using the 'src' attribute in the 'script' tag: '<script src='script.js'></script>'."
+  },
+  {
+    "id": 10,
+    "topic": "JavaScript",
+    "question": "How do you add a comment in JavaScript that spans multiple lines?",
+    "options": [
+      "/* This is a comment */",
+      "// This is a comment //",
+      "<!-- This is a comment -->",
+      "# This is a comment"
+    ],
+    "answer": "/* This is a comment */",
+    "explanation": "Multi-line comments in JavaScript start with '/*' and end with '*/'. Single-line comments use '//'."
+  },
+  {
+    "id": 11,
+    "topic": "React",
+    "question": "What is a React component?",
+    "options": [
+      "A function or class that optionally accepts inputs and returns a React element",
+      "A JavaScript function that returns HTML",
+      "A CSS class that styles elements",
+      "An HTML element with special attributes"
+    ],
+    "answer": "A function or class that optionally accepts inputs and returns a React element",
+    "explanation": "A React component is a reusable piece of code that represents a part of the user interface. It can be a function or a class that optionally accepts inputs (props) and returns a React element describing what should appear on the screen."
+  },
+  {
+    "id": 12,
+    "topic": "React",
+    "question": "How do you create a state in a React functional component?",
+    "options": [
+      "this.state = { count: 0 }",
+      "const [count, setCount] = useState(0)",
+      "setState({ count: 0 })",
+      "this.setState({ count: 0 })"
+    ],
+    "answer": "const [count, setCount] = useState(0)",
+    "explanation": "In React functional components, you use the useState hook to create state variables. The useState function returns an array containing the state variable and a function to update it."
+  },
+  {
+    "id": 13,
+    "topic": "React",
+    "question": "Which method is used to handle lifecycle events in a React class component?",
+    "options": [
+      "useEffect()",
+      "componentDidMount()",
+      "componentState()",
+      "useLifecycle()"
+    ],
+    "answer": "componentDidMount()",
+    "explanation": "In React class components, componentDidMount is a lifecycle method that is called after the component is rendered to the DOM for the first time. It's often used for initial data fetching."
+  },
+  {
+    "id": 14,
+    "topic": "React",
+    "question": "What is the virtual DOM in React?",
+    "options": [
+      "A lightweight copy of the actual DOM",
+      "A part of the real DOM",
+      "A method to create CSS styles",
+      "A feature to improve HTML performance"
+    ],
+    "answer": "A lightweight copy of the actual DOM",
+    "explanation": "The virtual DOM is a programming concept where a virtual representation of the UI is kept in memory and synced with the real DOM by a library such as ReactDOM. This process is called reconciliation."
+  },
+  {
+    "id": 15,
+    "topic": "React",
+    "question": "How do you pass data from parent to child components in React?",
+    "options": ["Using state", "Using props", "Using context", "Using refs"],
+    "answer": "Using props",
+    "explanation": "In React, data is passed from parent to child components using props. Props are read-only and allow you to pass data and event handlers to child components."
+  },
+  {
+    "id": 16,
+    "topic": "React",
+    "question": "What hook would you use to fetch data in a functional component?",
+    "options": ["useState()", "useEffect()", "useFetch()", "useReducer()"],
+    "answer": "useEffect()",
+    "explanation": "The useEffect hook is used to perform side effects in functional components, including data fetching, setting up subscriptions, and manually changing the DOM."
+  },
+  {
+    "id": 17,
+    "topic": "React",
+    "question": "Which of the following is a controlled component in React?",
+    "options": [
+      "An input element that maintains its own state",
+      "An input element whose state is controlled by React",
+      "A component that handles user input directly",
+      "A component that does not re-render"
+    ],
+    "answer": "An input element whose state is controlled by React",
+    "explanation": "A controlled component is an input element whose value is controlled by the React state. The value of the input is set by the state, and changes are handled via event handlers."
+  },
+  {
+    "id": 18,
+    "topic": "React",
+    "question": "What is JSX?",
+    "options": [
+      "A syntax extension for JavaScript",
+      "A method to create CSS styles",
+      "A new version of JavaScript",
+      "A library for building user interfaces"
+    ],
+    "answer": "A syntax extension for JavaScript",
+    "explanation": "JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows you to write HTML directly within JavaScript. JSX makes it easier to write and add HTML in React."
+  },
+  {
+    "id": 19,
+    "topic": "React",
+    "question": "How do you handle events in React?",
+    "options": [
+      "Using traditional HTML event attributes",
+      "Using addEventListener",
+      "Using onEventName props",
+      "Using jQuery"
+    ],
+    "answer": "Using onEventName props",
+    "explanation": "In React, events are handled using onEventName props, where 'EventName' is the name of the event you want to handle, such as onClick, onChange, or onSubmit."
+  },
+  {
+    "id": 20,
+    "topic": "React",
+    "question": "What is the purpose of a key in React?",
+    "options": [
+      "To uniquely identify elements in the DOM",
+      "To set the state of a component",
+      "To pass data between components",
+      "To style components"
+    ],
+    "answer": "To uniquely identify elements in the DOM",
+    "explanation": "Keys help React identify which items have changed, are added, or are removed. They should be given to the elements inside the array to give them a stable identity."
+  },
+  {
+    "id": 21,
+    "topic": "MERN",
+    "question": "What does MERN stand for?",
+    "options": [
+      "MongoDB, Express, React, Node",
+      "MySQL, Express, Redux, Node",
+      "MongoDB, Express, React, NestJS",
+      "MongoDB, EJS, React, Node"
+    ],
+    "answer": "MongoDB, Express, React, Node",
+    "explanation": "MERN stands for MongoDB, Express, React, and Node.js. It's a full-stack JavaScript framework used for building web applications."
+  },
+  {
+    "id": 22,
+    "topic": "MERN",
+    "question": "Which database is used in the MERN stack?",
+    "options": ["MySQL", "SQLite", "MongoDB", "PostgreSQL"],
+    "answer": "MongoDB",
+    "explanation": "MongoDB is a NoSQL database used in the MERN stack. It stores data in JSON-like format and is known for its scalability and flexibility."
+  },
+  {
+    "id": 23,
+    "topic": "MERN",
+    "question": "How do you start a Node.js server?",
+    "options": [
+      "node start",
+      "node server.js",
+      "npm run server",
+      "node app.js"
+    ],
+    "answer": "node app.js",
+    "explanation": "To start a Node.js server, you typically run the node command followed by the file name of your server, such as app.js or server.js."
+  },
+  {
+    "id": 24,
+    "topic": "MERN",
+    "question": "What is Express.js used for in the MERN stack?",
+    "options": [
+      "To manage the front-end logic",
+      "To build the user interface",
+      "To handle HTTP requests and responses",
+      "To connect to the database"
+    ],
+    "answer": "To handle HTTP requests and responses",
+    "explanation": "Express.js is a web application framework for Node.js, used to build server-side applications. It handles routing, HTTP requests, and middleware."
+  },
+  {
+    "id": 25,
+    "topic": "MERN",
+    "question": "Which command is used to create a new React application?",
+    "options": [
+      "npm create-react-app myApp",
+      "npx create-react-app myApp",
+      "npm start myApp",
+      "npx start myApp"
+    ],
+    "answer": "npx create-react-app myApp",
+    "explanation": "To create a new React application, you use the 'npx create-react-app myApp' command. This sets up a new React project with a default template."
+  },
+  {
+    "id": 26,
+    "topic": "MERN",
+    "question": "What is the role of Node.js in the MERN stack?",
+    "options": [
+      "To handle client-side logic",
+      "To serve as the database",
+      "To run the server-side code",
+      "To style the application"
+    ],
+    "answer": "To run the server-side code",
+    "explanation": "Node.js is used to run server-side code in the MERN stack. It allows you to use JavaScript on the server, making it possible to write the entire application in JavaScript."
+  },
+  {
+    "id": 27,
+    "topic": "MERN",
+    "question": "How do you connect a Node.js application to a MongoDB database?",
+    "options": [
+      "Using MySQL module",
+      "Using MongoDB module",
+      "Using Mongoose library",
+      "Using PostgreSQL module"
+    ],
+    "answer": "Using Mongoose library",
+    "explanation": "Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to connect a Node.js application to a MongoDB database."
+  },
+  {
+    "id": 28,
+    "topic": "MERN",
+    "question": "Which package is commonly used to handle routes in a React application?",
+    "options": [
+      "react-router",
+      "express-router",
+      "redux-router",
+      "react-routes"
+    ],
+    "answer": "react-router",
+    "explanation": "react-router is a standard library for routing in React. It enables navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL."
+  },
+  {
+    "id": 29,
+    "topic": "MERN",
+    "question": "What is the purpose of Redux in a MERN stack application?",
+    "options": [
+      "To manage the application’s state",
+      "To create server-side routes",
+      "To connect to the database",
+      "To compile the JavaScript code"
+    ],
+    "answer": "To manage the application’s state",
+    "explanation": "Redux is a state management library often used in React applications. It helps manage the application's state in a predictable way, making it easier to develop and debug."
+  },
+  {
+    "id": 30,
+    "topic": "MERN",
+    "question": "What is the main benefit of using the MERN stack?",
+    "options": [
+      "It uses multiple programming languages",
+      "It has a unified development environment",
+      "It allows real-time data processing",
+      "It is based on SQL databases"
+    ],
+    "answer": "It has a unified development environment",
+    "explanation": "The main benefit of using the MERN stack is that it provides a unified development environment where developers can use JavaScript for both the front-end and back-end, making the development process more efficient."
+  }
+]

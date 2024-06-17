@@ -1,0 +1,54 @@
+body {
+  background-color: lightblue;
+}
+
+#root {
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+  width: 100vw;
+}
+
+#full-Screen {
+  background-color: rgba(0, 0, 0, 0.425);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  left: 0;
+  #full-Screen-Card {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    /* min-width: 80vw; */
+    width: 700px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    button {
+      background-color: #1c1a5e;
+      color: white;
+      border: 2px solid #1c1a5e;
+    }
+  }
+}
+  
+@media only screen and (max-width:768px){
+  #root{
+    padding: 1rem;
+  }
+  #full-Screen{
+    #full-Screen-Card {
+      max-width: 90vw;
+      padding: 40px 10px;
+    }
+  }
+}
+
+@media only screen and (max-width:640px){
+  #root{
+    padding: 32px 12px;
+  }
+}
