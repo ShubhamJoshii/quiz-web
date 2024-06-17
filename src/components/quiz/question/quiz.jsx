@@ -28,7 +28,7 @@ const Quiz = () => {
   const initialTime = 10 * 60;
   const [timeLeft, setTimeLeft] = useState(() => {
     // Checking/Getting time state from LocalStorage
-    
+
     const savedTime = localStorage.getItem("timeLeft");
     return savedTime ? JSON.parse(savedTime) : initialTime;
   });
@@ -132,7 +132,7 @@ const Quiz = () => {
       return () => clearInterval(timer);
     }
   }, [isFullscreen]);
-  
+
   useEffect(() => {
     // for checking quiz timeout
     if (timeLeft === 0) {
@@ -153,8 +153,6 @@ const Quiz = () => {
     setIsFullscreen(!!document.fullscreenElement);
   };
 
-
-
   // handling full screen
   useEffect(() => {
     document.addEventListener("fullscreenchange", handleFullscreenChange);
@@ -174,7 +172,8 @@ const Quiz = () => {
 
   const submitQuiz = () => {
     // for submit quiz on condition like quiz submit only when all question is attempted
-    if (answered.length > 9) {
+    console.log(answered)
+    if (answered?.length > 9) {
       localStorage.setItem("resultStatus", true);
       navigate(`/result/${params.topic}`);
     } else {
@@ -228,7 +227,7 @@ const Quiz = () => {
               <button
                 id="submit-quiz"
                 disabled={answered.length === 0 ? true : false}
-                onClick={() => navigate(`/result/${params.topic}`)}
+                onClick={submitQuiz}
               >
                 SUBMIT
               </button>
@@ -237,7 +236,7 @@ const Quiz = () => {
               {minutes}:{seconds}
             </p>
             <div id="quiz-Question">
-              <h1>{params.topic.toLocaleUpperCase()}</h1>
+              <h1 id="resposive-topic">{params.topic.toLocaleUpperCase()}</h1>
 
               <QuizCard
                 question={questions[currentQuestion]}
@@ -261,6 +260,7 @@ const Quiz = () => {
               </div>
             </div>
             <div id="quiz-All-Questions">
+              <h1 id="resposive-topic">{params.topic.toLocaleUpperCase()}</h1>
               <div id="first-half">
                 <h4>Question {parseInt(currentQuestion) + 1}/10</h4>
                 {/* Quiz Question Number for showcase (Visited, unvisted, answer choosen or not ) or jumping to specific question  */}

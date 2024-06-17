@@ -73,6 +73,9 @@
     display: flex;
     flex-direction: column;
     width: 250px;
+    #resposive-topic {
+      display: none;
+    }
     #first-half {
       flex: 1;
       #question-Numbers {
@@ -189,10 +192,10 @@
       color: rgb(58, 248, 58);
     }
   }
-  #score{
+  #score {
     font-size: 60px;
     color: #53b153;
-    span{
+    span {
       color: #317531;
       font-size: 100px;
     }
@@ -206,7 +209,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: black;
     button {
+      color: black;
       border: 2px solid;
       &:hover {
         transform: scale(1.01);
@@ -217,7 +222,7 @@
       color: white;
       background-color: #1c1a5e;
     }
-
+    
     button:nth-child(2) {
       border-color: #1c1a5e;
     }
@@ -245,9 +250,16 @@
       #quiz-change-buttons {
         display: none;
       }
+      #resposive-topic {
+        display: none;
+      }
     }
     #resposive-button {
       display: block;
+    }
+    #quiz-All-Questions #resposive-topic {
+      display: block;
+      margin: 10px 0;
     }
   }
   #quiz-change-buttons {
@@ -257,35 +269,84 @@
 
 @media only screen and (max-width: 768px) {
   #quiz-Container {
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 20px 2% 30px 2%;
   }
   .startQuiz {
     width: calc(95vw - 50px);
     padding: 20px;
   }
+  #after-submit{
+    width: calc(90vw - 100px);
+    padding: 20px 40px;
+  }
 }
 @media only screen and (max-width: 640px) {
   .startQuiz {
     width: 96%;
+    #Instructions-Options {
+      flex-direction: column;
+      justify-content: start;
+      align-items: stretch;
+      select {
+        width: 90%;
+        margin: auto;
+        padding: 4px;
+        font-size: 14px;
+      }
+    }
     padding: 40px 2%;
     img {
-      width: 180px;
+      width: 150px;
     }
     h2 {
       font-size: 18px;
     }
     ol li {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 
+  #after-submit{
+    width: calc(96% - 30px);
+    padding: 20px 10px;
+    #indicator-Text, #TimeUP{
+      font-size: 20px; 
+    }
+    #score{
+      font-size: 50px;
+      span{
+        font-size: 80px;
+      }
+    }
+    #buttons{
+      font-size: 14px;
+    }
+  }
   #quiz-Container {
     width: 96%;
-    padding: 40px 2%;
+    padding: 20px 2% 30px 2%;
+    gap: 10px;
     #quiz-All-Questions #first-half #question-Numbers {
       justify-content: start;
     }
+    #quiz-All-Questions {
+      #resposive-topic{
+        /* display: none; */
+        font-size: 20px;
+      }
+
+      #first-half #question-Numbers {
+        gap: 5px;
+        justify-content: space-evenly;
+      }
+    }
     #quiz-Question {
+      #resposive-topic {
+        font-size: 24px;
+        margin: 10px 0;
+        display: none;
+      }
       h2 {
         font-size: 18px;
       }

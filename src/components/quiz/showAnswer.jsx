@@ -19,7 +19,7 @@ const ShowAnswers = ({ setSubmit }) => {
       <div id="quiz-Container">
         <div id="resposive-button">
           <div id="quiz-change-buttons">
-            <button onClick={() => setShowResult(true)}>Show Result</button>
+            <button onClick={() => naviagate(`/result/${params.topic}`)}>Show Result</button>
           </div>
         </div>
 
